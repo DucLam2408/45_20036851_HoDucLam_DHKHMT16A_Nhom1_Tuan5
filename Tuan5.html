@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style5.css">
+    <title>Document</title>
+</head>
+<body>
+<h2 align = "center">Đăng Ký Tài Khoản</h2>
+<form name="form1" onsubmit="SubmitForm();" method="post" action="#">
+    <div>
+        <label for="txtDN" class="title"> Tên Đăng Nhập:</label>
+        <input id="txtDN" onblur="return KiemTraTenDN();" type="text" name="txtdn" size="30" placeholder="txtDN"/> <span id="tendn">*</span>
+    </div>
+    <div>
+        <label for="txtMK" class="title"> Mật Khẩu:</label>
+        <input id="txtMK" onblur="return KiemTraPassWord();" type="password" name="txtMK" size="30" placeholder="txtMK"/> <span id="mk">*</span>
+    </div>
+    <div>
+        <label for="txtXNMK" class="title"> Mật Khẩu:</label>
+        <input id="txtXNMK" onblur="return KiemTraXacNhanPassword();" type="password" name="txtXNMK" size="30" placeholder="txtXNMK"/> <span id="xnmk">*</span>
+    </div>
+    <h5 align = "center">Thông Tin Cá Nhân</h5>
+    <div>
+        <label for="txtName" class="title"> Họ Và Tên:</label>
+        <input type="text" id="txtName" name="txtName" size="30" placeholder="txtName"/> <span id="hoten">* Bắt buộc</span>
+    </div>
+    <div>
+        <label for="txtNS" class="title">Ngày sinh:</label>
+        <input type="date" id="txtNS" name="txtNS" size="30" placeholder="txtNS" onblur="return KiemTraNgaySinh();"/> <span id="ngaysinh">  </span>
+    </div>
+    <div class="radio-buttons">
+        <span class="title">Giới tính:</span>
+        <input type="radio" name="gender" id="male" value="M" checked>
+        <label for="male">Name</label>
+        <input type="radio" name="gender" id="female" value="F"/>
+        <label for="female"> Nữ </label><br>
+    </div>
+    <div>
+        <label for="txtDC" class="title">Địa chỉ:</label>
+        <input type="text" id="txtDC" name="txtDC" size="30" placeholder="txtDC"/><span id="diachi"> </span>
+    </div>
+    <div>
+        <label for="txtDT" class="title">Điện Thoại:</label>
+        <input type="text" name="txtDT" id="txtDT" size="30" placeholder="txtEmail"/> <span id="email">Nhập đúng địa chỉ email</span>
+    </div>
+
+    <div class="submit">
+        <input type="submit" value="Đăng Ký" id="submit"/>
+        <input type="reset" value="Hủy" id="submit"/>
+    </div>
+</form>
+ <script src="main5.js"></script>
+</body>
+</html>
